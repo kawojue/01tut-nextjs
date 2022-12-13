@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./pages/**/*.jsx'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cabin: ['Cabin', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
