@@ -1,0 +1,7 @@
+.container {
+    @apply min-h-[100vh] py-0 px-[0.5rem] flex flex-col justify-start items-center;
+}
+
+.main {
+    @apply py-[5rem] px-0 flex flex-col flex-1 justify-start items-center text-[1.25rem];
+}
