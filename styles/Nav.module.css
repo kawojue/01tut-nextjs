@@ -1,0 +1,11 @@
+.nav {
+    @apply fixed top-0 w-full mx-auto bg-black px-10 py-3 text-white;
+}
+
+.lists {
+    @apply flex justify-around
+}
+
+.list a {
+    @apply text-2xl
+}
