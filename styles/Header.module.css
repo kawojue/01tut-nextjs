@@ -1,0 +1,15 @@
+.header {
+    @apply mb-3;
+}
+
+.title {
+    @apply text-4xl font-medium
+}
+
+.title span {
+    @apply text-blue-600;
+}
+
+.description {
+    @apply text-sm;
+}

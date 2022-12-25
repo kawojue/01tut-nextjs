@@ -5,5 +5,5 @@
 
 
 body {
-  @apply font-cabin;
+  @apply font-cabin text-center;
 }
