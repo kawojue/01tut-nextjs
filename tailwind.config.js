@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         cabin: ['Cabin', 'sans-serif']
+      },
+      colors: {
+        "pry-clr-0": "rgb(245, 248, 240)"
       }
     },
   },
