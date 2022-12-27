@@ -5,5 +5,5 @@
 
 
 body {
-  @apply font-cabin text-center;
+  @apply font-cabin bg-pry-clr-0;
 }
