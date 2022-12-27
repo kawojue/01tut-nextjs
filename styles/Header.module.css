@@ -1,5 +1,5 @@
 .header {
-    @apply mb-3;
+    @apply mb-3 text-center;
 }
 
 .title {
