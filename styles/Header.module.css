@@ -3,7 +3,7 @@
 }
 
 .title {
-    @apply text-4xl font-medium
+    @apply text-4xl font-medium tracking-wider
 }
 
 .title span {
@@ -11,5 +11,5 @@
 }
 
 .description {
-    @apply text-sm;
+    @apply text-[16px];
 }
