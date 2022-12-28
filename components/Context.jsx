@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { createContext, useState, useEffect } from 'react'
 
 const Context = createContext({})
@@ -11,9 +12,8 @@ export const DataProvider = ({ children }) => {
         setErr(null)
         setIsLoading(true)
         try {
-            const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=200`)
-            const data = await res.json()
-            setArticles(data)
+            const res = await axios.get(`https://jsonplaceholder.typicode.com/posts?_limit=200`)
+            setArticles(res.data)
         } catch {
             setErr("Please, reload the page.")
         }
