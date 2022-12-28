@@ -7,10 +7,11 @@ export const DataProvider = ({ children }) => {
     const [articles, setArticles] = useState([])
     const [isLoading, setIsLoading] = useState(true)
 
-    const getStaticProps = async () => {
+    const fetchPosts = async () => {
+        setErr(null)
         setIsLoading(true)
         try {
-            const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=9`)
+            const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=200`)
             const data = await res.json()
             setArticles(data)
         } catch {
@@ -19,7 +20,7 @@ export const DataProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        (async () => await getStaticProps())()
+        (async () => await fetchPosts())()
         setTimeout(() => {
             setIsLoading(false)
         }, 1500);
@@ -27,8 +28,7 @@ export const DataProvider = ({ children }) => {
 
     return (
         <Context.Provider value={{
-            err, isLoading,
-            articles
+            err, isLoading, articles,
         }}>
             {children}
         </Context.Provider>
