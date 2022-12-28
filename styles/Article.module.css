@@ -17,7 +17,7 @@
 }
 
 .title {
-    @apply capitalize text-xl font-medium tracking-wide;
+    @apply capitalize text-xl font-semibold tracking-wide;
 }
 
 .body {
@@ -31,4 +31,26 @@
 .title:hover,
 .body:hover {
     @apply text-blue-500;
+}
+
+.main {
+    @apply w-[95vw] max-w-[600px] bg-white text-center px-5 py-7 rounded-lg;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+        rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.main h3 {
+    @apply font-medium tracking-wide capitalize mb-3
+}
+
+.main p {
+    @apply mb-5 text-[18px] text-left;
+}
+
+.main a {
+    @apply tracking-widest bg-blue-500 text-white capitalize text-lg px-2 py-0.5 rounded-md
+}
+
+.main a:hover {
+    @apply bg-blue-900 text-pry-clr-0;
 }
