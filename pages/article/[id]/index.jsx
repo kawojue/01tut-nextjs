@@ -1,27 +1,8 @@
 import Link from 'next/link'
-import { useContext } from 'react'
-import Context from '../../../components/Context'
 import ArticleStyles from '../../../styles/Article.module.css'
 
 const Article = ({ article }) => {
     const { title, body } = article
-    const { err, isLoading } = useContext(Context)
-
-    if (err) {
-        return (
-            <>
-                <h1>{err}</h1>
-            </>
-        )
-    }
-
-    if (isLoading) {
-        return (
-            <>
-                <h1>Loading...</h1>
-            </>
-        )
-    }
 
     return (
         <main className={ArticleStyles.main}>
