@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { server } from '../../../config/index'
-import ArticleStyles from '../../../styles/Article.module.css'
+import { server } from '../../config/index'
+import ArticleStyles from '../../styles/Article.module.css'
 
 const Article = ({ article }) => {
     const { title, body } = article
