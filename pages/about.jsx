@@ -1,7 +1,10 @@
+import Meta from "../components/Meta"
+
 export default function About() {
     return (
         <>
-            <p>About!</p>
+            <Meta title={`About`} />
+            <p>About our Website!</p>
         </>
     )
 }
