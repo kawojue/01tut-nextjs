@@ -2,12 +2,12 @@ import { articles } from '../../../data'
 
 export default function handler({ query: { id } }, res) {
     // const { id } = req.query
-    const filtered = articles.filter(article => article.id === id)
+    const getIArticle = articles.find(article => article.id === id)
 
-    if (filtered.length > 0) {
+    if (getIArticle) {
         res
             .status(200)
-            .json(filtered[0])
+            .json(getIArticle)
     } else {
         res
             .status(404)
