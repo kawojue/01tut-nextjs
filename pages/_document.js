@@ -1,3 +1,4 @@
+import Meta from '../components/Meta'
 import Document, { Html, Head, Main, NextScript, } from 'next/document'
 
 class MyDocument extends Document {
@@ -11,10 +12,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head>
-          <meta name="keywords"
-            content="web development, programming" />
-        </Head>
+        <Meta />
         <body>
           <Main />
           <NextScript />
